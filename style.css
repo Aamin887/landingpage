@@ -70,6 +70,62 @@ header h1 {
     margin-bottom: 20px;
 }
 
-header p {
+header p, nav ul li, nav .logo h3{
     margin-bottom: 40px;
+    font: 18px #e5e7eb;
+}
+
+/* styles for main */
+
+section {
+    display: flex;
+    padding: 40px 0;
+    gap: 20px;
+    text-align: center;
+}
+
+section.info-section{
+    color: #1f2937;
+}
+
+article.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .info-img{
+    border:2px solid aquamarine;
+    border-radius: 10px;
+    height: 80px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+section.msg-section {
+    color: black;
+    flex-direction: column;
+    background-color: #e5e7eb;
+}
+
+section.msg-section .content q {
+    font: 36px italic #666d77;
+}
+
+section.msg-section .author {
+text-align: right;
+font-weight: bold;
+}
+
+section.cta-section {
+margin: 80px 0;
+justify-content: space-around;
+background-color: rgb(62, 23, 234);
+border-radius: 5px;
+}
+
+section.cta-section .btn {
+    background-color: transparent;
+    border: 1px solid whitesmoke;
 }
