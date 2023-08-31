@@ -15,6 +15,11 @@ a {
     color: whitesmoke;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .container {
     width: 70%;
     margin: 0 auto;
@@ -22,7 +27,7 @@ a {
 }
 
 .btn {
-    padding: 5px 10px;
+    padding: 15px 30px;
     border-radius: 5px;
     border:none;
     background-color: blue;
@@ -30,9 +35,8 @@ a {
 }
 
 .header-img.img {
-    background-color: rgb(87, 44, 44);
     width: 300px;
-    height: 150px;
+    height: auto;
 }
 
 header, footer{
@@ -96,11 +100,15 @@ article.info{
 }
 
 section .info-img{
-    border:2px solid aquamarine;
     border-radius: 10px;
-    height: 80px;
-    width: 80%;
+    height: 200px;
+    width: 200px;
     margin-bottom: 20px;
+}
+
+section .info-img img {
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 section.msg-section {
@@ -111,11 +119,13 @@ section.msg-section {
 
 section.msg-section .content q {
     font: 36px italic #666d77;
+    padding: 0 20px;
 }
 
 section.msg-section .author {
 text-align: right;
 font-weight: bold;
+margin-right: 10px;
 }
 
 section.cta-section {
@@ -128,4 +138,11 @@ border-radius: 5px;
 section.cta-section .btn {
     background-color: transparent;
     border: 1px solid whitesmoke;
+}
+
+footer.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
 }
